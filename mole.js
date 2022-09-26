@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const moleHeads = document.querySelectorAll('.wgs__mole-head');
   for (let moleHead of moleHeads) {
-    moleHead.addEventListener('click', event => {
+    moleHead.addEventListener('click', (event) => {
       if (!clickable) return;
 
       score += 1;
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
       hideMole(event.target);
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
-      // event.target.classList.add('wgs__mole-head--hidden');
+      event.target.classList.add('wgs__mole-head--hidden');
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
       // event.target.classList.add('wgs__mole-head--whacked');
