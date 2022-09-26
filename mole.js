@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const moleHeads = document.querySelectorAll('.wgs__mole-head');
   for (let moleHead of moleHeads) {
-    moleHead.addEventListener('click', event => {
+    moleHead.addEventListener('click', (event) => {
       if (!clickable) return;
 
       score += 1;
